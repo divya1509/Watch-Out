@@ -296,6 +296,7 @@ main {
 
 .movies-header, .shows-header, .genre-header, .year-header{
   width: 150px;
+  cursor: pointer;
   height: 50px;
   border-radius: 5%;
   color: #4b1033;

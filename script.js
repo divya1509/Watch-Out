@@ -290,6 +290,8 @@ form.addEventListener('submit', (e) => {
 function changeHeader(curr) {
     let prior = document.querySelector(".selected-header");
     prior.classList.remove("selected-header");
+    let priorTag = document.querySelector(".tag-container");
+    if (priorTag != null) priorTag.remove();
     // console.log(curr.classList);
     curr.classList.add("selected-header");
 }
@@ -299,8 +301,7 @@ genreHeader.addEventListener('click', function () {
     // console.log(e.currentTarget);
     changeHeader(this);
     // add genre container
-    let prior = document.querySelector(".tag-container");
-    if (prior != null) prior.remove();
+    
 
     // header.style.height = '250px';
     let tagsDiv = document.createElement("div");
